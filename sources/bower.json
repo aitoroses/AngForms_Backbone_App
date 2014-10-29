@@ -33,6 +33,7 @@
     "deb.js": "~0.0.2",
     "underscore.db": "~0.7.0",
     "velocity": "~1.1.0",
-    "angular-velocity": "~0.1.1"
+    "angular-velocity": "~0.1.1",
+    "angular-ui-router": "~0.2.11"
   }
 }

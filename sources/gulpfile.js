@@ -57,7 +57,8 @@ var libraries = [
   '../polyfills/polyfill.js',
   '../polyfills/typedarray.js',
   '../polyfills/es5.js',
-  '../polyfills/json2.js'
+  '../polyfills/json2.js',
+  './angular-ui-router/release/angular-ui-router.js'
 ];
 
 var styles = [

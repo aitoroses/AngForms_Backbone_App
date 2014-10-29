@@ -8,7 +8,7 @@ var directives = angular.module('EAPP.directives', []),
     'EAPP.controllers',
     'EAPP.services',
     'EAPP.filters',
-    'ngRoute'
+    'ui.router'
   ]);
 
 var dir = {
@@ -17,16 +17,20 @@ var dir = {
 };
 EAPP.value('eappDir', dir);
 
-EAPP.config(function ($routeProvider, DebugProvider, $datepickerProvider) {
-  $routeProvider
+EAPP.config(function ($stateProvider, $urlRouterProvider, DebugProvider, $datepickerProvider) {
+
+  $urlRouterProvider.otherwise("/404");
+
+  $stateProvider
   
-    .when('/example', {
+    .state('exampleState', {
+      url: '/example',
       templateUrl: dir.views + 'example.html'
     })
       
     
-    .otherwise({
-      redirectTo: '/404',
+    .state('notFound', {
+      url: '/404',
       template: '<h1 style="color: black; font-size: 20px;">404 Page Not Found On ' + window.location.host + '</h1>' +
         '<p style="padding: 5px;;font-size: 16px;"">Unfortunately, the page you were trying to retrieve does not exist on ' +
         window.location.host + '.</p>'

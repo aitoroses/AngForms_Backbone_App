@@ -1,6 +1,5 @@
 // Create Main module
 var app = angular.module('main', [
-  'ngRoute',
   'ngAnimate',
   'mgcrea.ngStrap',
   'ngGrid',
@@ -21,13 +20,7 @@ app.factory('Global', function () {
 });
 
 // Module configuration
-app.config(function ($routeProvider, $httpProvider) {
-
-  // App specific routes
-  $routeProvider
-    .when('/main', {
-      template: 'Main app template'
-    });
+app.config(function ($httpProvider) {
 
   // Prepare for CORS
   $httpProvider.defaults.headers.common.Accept = 'application/json';

@@ -35,8 +35,7 @@
 		</script>
 		<!-- -->
 
-    <div ng-view></div>
-    <f-loading></f-loading>
+    <div ui-view></div>
 
     <!-- @if NODE_ENV!='production' -->
     <script type="text/javascript" src="lib/jquery.min.js"></script>
@@ -60,7 +59,7 @@
     <script type="text/javascript" src="lib/velocity.min.js"></script>
     <script type="text/javascript" src="lib/velocity.ui.min.js"></script>
     <script type="text/javascript" src="lib/angular-velocity.min.js"></script>
-
+    <script type="text/javascript" src="lib/angular-ui-router.js"></script>
 
 		<!-- Polyfills -->
     <script type="text/javascript" src="lib/polyfill.js"></script>
@@ -72,9 +71,9 @@
     <!-- @endif -->
 
     <!-- @if NODE_ENV='production' -->
-    <script type="text/javascript" src="eee.libraries.<!-- @echo timestamp -->.js"></script>
+    <script type="text/javascript" src="libraries.<!-- @echo timestamp -->.js"></script>
     <script type="text/javascript" src="modules.<!-- @echo timestamp -->.js"></script>
-    <script type="text/javascript" src="eee.tmpl.<!-- @echo timestamp -->.js"></script>
+    <script type="text/javascript" src="tmpl.<!-- @echo timestamp -->.js"></script>
     <!-- @endif -->
 
   </body>
