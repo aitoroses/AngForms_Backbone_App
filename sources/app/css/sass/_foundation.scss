@@ -1,0 +1,158 @@
+/**
+ * Foundation directives styles
+ */
+.vis-hidden{
+  visibility: hidden;
+}
+
+.ng-invalid-required {
+  /*background-color: red;*/
+}
+
+.panel-heading {
+  background-color: #eee !important;
+}
+
+/** icons **/
+.icon-xs {
+  font-size: 14px; vertical-align: top;
+}
+
+.icon-md {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.icon-lg {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.icon-xl {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.icon-mandatory {
+  color: orangered;
+}
+
+.input-xs {
+	height: 22px;
+	padding: 5px 5px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+h3.header-toolbar {
+	line-height: 25px;
+}
+
+.f-loading {
+	width: 100%;
+	line-height: 500px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+
+	.f-loading-error {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.80);
+		font-size: 25px;
+	}
+
+	.f-loading-image {
+		height: 200px;
+		width: 100%;
+		background-image: url('./images/loading.gif');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		position: absolute;
+		top: 200px;
+		z-index: -1
+	}
+}
+
+.f-no-loading-background {
+	background: white;
+	width: 100px;
+	height: 800px;
+}
+
+.f-show-panel {
+	.f-show-panel-title {
+		font-size: $font-default-size;
+		color: $header-font-color;
+		font-weight: bold;
+		cursor: pointer;
+		i {
+			font-weight: bold;
+			/*font-size: 16px;*/
+			color: #8fb6da;
+		}
+	}
+	.f-show-panel-content {
+		margin-top: 5px;
+	}
+}
+
+.f-train {
+	$trainHeight: 80px;
+	font-size: 0px;
+	height: $trainHeight;
+	.f-train-item {
+		width: 80px;
+		height: $trainHeight;
+		display: inline-block;
+		vertical-align: middle;
+
+		.f-train-item-box {
+			height: 10px;
+
+			.f-train-item-box-line {
+				background-color: #8e97af;
+				min-width: 20px;
+				width: 100%;
+				height: 1px;
+				bottom: 10px;
+				position: relative;
+				left: 20px;
+			}
+
+			.f-train-item-box-content {
+				background-color: #587daf;
+				min-width: 20px;
+				width: 20px;
+				height: 20px;
+				position: relative;
+				left: 20px;
+				z-index: 1;
+			}
+		}
+		.f-train-item-title {
+			margin-top: 20px;
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+}
+
+.no-padding-top-bottom {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/*.panel-chevron {
+  position: relative;
+  z-index: 10;
+}*/
+
+// Progress var on IE
+#ngProgress {
+	color: rgb(0,168,255) !important;
+	background-color: rgb(0,168,255) !important;
+}

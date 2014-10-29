@@ -1,0 +1,38 @@
+{
+  "name": "web-task",
+  "version": "0.0.1",
+  "authors": [
+    "Fernando Koch <fernando.koch@bpmsoasolutions.com>"
+  ],
+  "description": "an angularjs sample task",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.2.x",
+    "angular-resource": "~1.2.x",
+    "angular-route": "~1.2.x",
+    "angular-mocks": "~1.2.x",
+    "bootstrap": "~3.2.0",
+    "angularjs": "*",
+    "font-awesome": "~4.2.0",
+    "angular-strap": "~2.0.5",
+    "moment-timezone": "~0.2.1",
+    "pako": "~0.2.5",
+    "ng-grid": "~2.0.12",
+    "ngstorage": "~0.3.0",
+    "lodash": "~2.4.1",
+    "ngprogress": "~1.0.6",
+    "tv4": "~1.0.17",
+    "deb.js": "~0.0.2",
+    "underscore.db": "~0.7.0",
+    "velocity": "~1.1.0",
+    "angular-velocity": "~0.1.1"
+  }
+}

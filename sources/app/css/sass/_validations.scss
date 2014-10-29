@@ -1,0 +1,7 @@
+input.ng-invalid {
+	 border: 2px solid rgba(255, 0, 0, 0.86) !important;
+ }
+
+input.ng-invalid.ng-pristine {
+	border: 2px solid rgba(250, 232, 32, 0.5) !important;
+}

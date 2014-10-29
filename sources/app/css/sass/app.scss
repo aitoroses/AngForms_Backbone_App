@@ -1,0 +1,195 @@
+@import "adf";
+@import "foundation";
+@import "validations";
+
+body {
+  padding: 5px 0;
+}
+
+div[ng-view] {
+  background: white;
+}
+
+.decision-pending {
+  background-color: #007fa1 !important;
+}
+
+.resolution-pending {
+  background-color: #fcaf17 !important;
+}
+
+.completed,.partially-completed {
+  background-color: #1ac04d !important;
+}
+
+.terminated {
+  background-color: #e44c16 !important;
+}
+
+.ui-panel-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.tasks-section-title {
+  h2 {
+    line-height: 2em;
+  }
+}
+
+.task-category-panel {
+  color: red;
+}
+
+.task-fields {
+  display: table;
+  background-color: #eee;
+  padding: 15px 0 0px;
+  width: 100%;
+}
+
+.task-panel {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.task-panel-comments {
+  h2 {
+    font-size: 12px;
+  }
+}
+
+.help-link {
+  padding-left: 10px;
+}
+
+.task-panel-title {
+  border-bottom: 1px solid #eee !important;
+  &.added-task span {
+    /*background-color: #ffe1c5 !important;*/
+  }
+  h2 {
+    line-height: 32px;
+  }
+  label {
+    margin-bottom: -5px;
+  }
+}
+
+.global-history-title {
+  background-color: #8fb6da !important;
+  h2 {
+    color: white !important;
+  }
+}
+
+.ticket-info-table {
+  td.info-label {
+    font-weight: bold;
+    text-align: right;
+  }
+  tr:first-child td {
+    border-top: 0;
+  }
+}
+
+.task-list-ro {
+  td {
+    vertical-align: middle !important;
+  }
+}
+
+.table-top-borderless {
+  tr:first-child td {
+    border-top: 0;
+  }
+}
+
+.table-rows-borderless {
+	tr td {
+		border-top: 0 !important;
+	}
+}
+
+.table-bottomless {
+  margin-bottom: 0 !important;
+}
+
+.ticket-details-table, .audits-table {
+  margin-bottom: 0 !important;
+}
+
+.task-toolbar {
+  text-align: right;
+  padding: 10px 0 10px;
+}
+
+// EEE
+
+.eee-creation {
+  &.main {
+    margin-top: 2px;
+    border: 1px solid black;
+    font-size: px;
+  }
+
+  .region {
+    .region-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #003d5b;
+    }
+  }
+}
+
+.datepicker {
+  /** Angular strap datepicker width fix **/
+  min-width: 250px;
+  max-width: 250px !important;
+
+  button.btn {
+    border: 0;
+    font-size: $font-default-size;
+    font-family: $font-stack;
+    padding: 3px 0px 3px 0px;
+  }
+  th.dow.text-center {
+    font-size: 11px;
+  }
+}
+
+/* Decision */
+
+.grayed {
+  color: rgb(180, 180, 180);
+}
+
+/* EEE REDIRECT */
+.eee-redirect {
+  padding: 20px;
+  button {
+    position: relative;
+    left: 8px;
+    top: 8px;
+  }
+  h1 {
+    color: black;
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    &:before {
+      content: '- '
+    }
+  }
+}
+
+/** employee */
+.employee-edit-table {
+  td {
+    /*vertical-align: top;*/
+  }
+}
+
+/** privileged */
+

@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "amd": true
+    },
+    "globals": {
+        "DocumentFragment": true,
+        "angular": true,
+        "$": true,
+        "jQuery": true,
+        "moment": true,
+        "pako": true,
+        "_": true,
+        "$injector": true
+    },
+    "rules": {
+        "valid-jsdoc": 0,
+        "curly": [0, "multi"],
+        "brace-style": [1, "stroustrup"],
+        "consistent-this": 2,
+        "no-constant-condition": 1,
+        "no-underscore-dangle": 0,
+        "no-use-before-define": 1,
+        "func-names": 0,
+        "func-style": [2, "declaration"],
+        "new-cap": 1,
+        "new-parens": 2,
+        "no-ternary": 0,
+        "no-unused-vars": [1, {"vars": "local", "args": "none"}],
+        "quotes": [0, "double"],
+        "one-var": 0,
+        "space-infix-ops": 0,
+        "strict": 0,
+        "new-cap": 0,
+        "eqeqeq": 0,
+        "consistent-this": 0,
+        "consistent-return": 0,
+        "brace-style": 0,
+        "no-use-before-define": 0,
+        "no-inner-declarations": 0
+    }
+}
